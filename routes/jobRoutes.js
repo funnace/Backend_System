@@ -7,25 +7,25 @@ const router = express.Router();
 
 //job_seeker apis
 // Fetch all job postings
-router.get('/user',authenticateJWT, checkRole('job_seeker'), getAllJobs)
+router.get('/job_seeker',authenticateJWT, checkRole('job_seeker'), getAllJobs)
 
 
 
 //job_provider apis
 // Get all job postings for a specific provider
-router.get('/provider',authenticateJWT, checkRole('job_provider'), getJobs)
+router.get('/job_provider',authenticateJWT, checkRole('job_provider'), getJobs)
 
 // Post a new job
-router.post('/provider',authenticateJWT, checkRole('job_provider'), postJob)
+router.post('/job_provider',authenticateJWT, checkRole('job_provider'), postJob)
 
 // Get a specific job posting by the provider through jobId
-router.get('/provider/:jobId',authenticateJWT, checkRole('job_provider'), getJob)
+router.get('/job_provider/:jobId',authenticateJWT, checkRole('job_provider'), getJob)
 
 // Update an existing job posting
-router.put('/provider/:jobId',authenticateJWT, checkRole('job_provider'), updateJob)
+router.put('/job_provider/:jobId',authenticateJWT, checkRole('job_provider'), updateJob)
 
 // Delete an existing job posting
-router.delete('/provider/:jobId',authenticateJWT, checkRole('job_provider'), deleteJob)
+router.delete('/job_provider/:jobId',authenticateJWT, checkRole('job_provider'), deleteJob)
 
 
 
