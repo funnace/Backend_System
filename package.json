@@ -1,0 +1,25 @@
+{
+  "name": "backend_system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Node.js","Express.js", "PostgreSQL", "authentication", "role based action control", "APIs", "Migration", "Seeding", "JWT"],
+  "author": "Yash Bisht",
+  "license": "ISC",
+  "description": "This project implements a backend system using Node.js, Express.js, and PostgreSQL for a job portal application. It includes authentication, role-based access control (RBAC), and APIs for managing users, job postings, and applications. Database migrations and seeding scripts are provided for easy setup.",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
