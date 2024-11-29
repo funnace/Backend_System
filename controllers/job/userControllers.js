@@ -1,4 +1,4 @@
-const { db } = require('../../db_connection');
+const { db } = require('../../config/db_connection')
 
 const getAllJobs = async (req, res) => {
     try {

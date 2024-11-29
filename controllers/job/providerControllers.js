@@ -1,4 +1,4 @@
-const { db } = require('../../db_connection');
+const { db } = require('../../config/db_connection')
 const { jobCreationSchema, jobUpdateSchema } = require('../../Schema/validationSchema/jobSchemas');
 
 // Get all job postings for a specific provider

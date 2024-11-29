@@ -1,5 +1,5 @@
 const { registrationSchema } = require('../../Schema/validationSchema/registrationSchema');
-const { db } = require('../../db_connection')
+const { db } = require('../../config/db_connection')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken');
 

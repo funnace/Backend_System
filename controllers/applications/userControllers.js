@@ -1,4 +1,4 @@
-const { db } = require('../../db_connection')
+const { db } = require('../../config/db_connection')
 
 // Get all the applied applications
 const getAllApplications = async (req, res) => {

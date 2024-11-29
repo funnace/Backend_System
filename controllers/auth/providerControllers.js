@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { db } = require('../../db_connection'); 
+const { db } = require('../../config/db_connection')
 const { registrationSchema } = require('../../Schema/validationSchema/registrationSchema');
 
 // Provider Login function
